@@ -1,7 +1,15 @@
+import Image from 'next/image';
+import heroImage from '@/assets/hero.png';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>TESTE</h1>
+    <main className="flex items-center justify-center min-h-[calc(100vh-80px)]">
+      <Image
+        className="max-w-sm md:max-w-xl"
+        src={heroImage}
+        alt="Imagem"
+        width={600}
+      />
     </main>
   );
 }
